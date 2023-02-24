@@ -1,0 +1,224 @@
+<%- include('header'); -%>
+<section id="title">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<a href="/"><img src="/img/logo.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/menu/#allpizza">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/offers">Offers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/loginpage">My Orders</a>
+    </li>
+    <li class="nav-item">
+    <button type="button" name="cartbutton" class="xyz flex items-center">
+      <span id="cartCounter" class="text-white font-bold">0</span>
+      <img src="/img/cart-black.png" alt="">
+    </button>
+    </li>
+    <form  action="/logout" method="post">
+      <li class="nav-item logout1">
+        <button type="submit" class="logout2" name="button">Logout</button>
+      </li>
+      </form>
+  </ul>
+</div>
+</nav>
+</section>
+
+<section id="offerorwhat">
+    <div class="row h-100">
+      <div class="col-6">
+        <p class="Hungry">Looking for pizzas ?</p>
+  <h1>Check offers !</h1>
+  <a href="#allpizza"><input type="Submit" name="" class="button2" value="Check out 👇">
+  </a>
+      </div>
+   <div class="col-6 d-flex align-items-center justify-content-center">
+    <img src="/img/ok1.png" alt="" class="offerimg">
+  </div>
+</div>
+
+
+</section>
+
+
+<!-- Offers on pizzas section -->
+<section id="allpizza">
+  <h3 class="offerpizza1">Today's offer on pizzas !</h3>
+  <div class="container-fluid allpizzacontainer">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 first">
+    <img src="/img/piz1.jpg" alt="" class="a">
+      <p class="editable">Margherita</p>
+      <div class="w3-panel w3-round-xxlarge w3-teal">
+      <p>Small</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-add">
+      <p class="offerprice"> $5.99</p>
+      <p class="price123">$4.23</p>
+      </div>
+      <div class="col-sm-3 col-add">
+      <button type="button" name="Addbutton" onclick="hello(0)" class="Add123" id="add1">+ Add</button>
+      </div>
+    </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 first">
+      <img src="/img/piz1.jpg" alt="" class="a">
+      <p class="editable">Marinara</p>
+      <div class="w3-panel w3-round-xxlarge w3-teal x">
+      <p>Medium</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-add">
+      <p class="offerprice"> $7.05</p>
+      <p class="price123">$5.87</p>
+      </div>
+      <div class="col-sm-3 col-add">
+      <button type="button" name="Addbutton" onclick="hello(1)" class="Add123" id="add2">+ Add</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 first">
+<img src="/img/piz1.jpg" alt="" class="a">
+<p class="editable">Carbonara</p>
+<div class="w3-panel w3-round-xxlarge w3-teal">
+<p>Small</p>
+</div>
+<div class="row">
+  <div class="col-sm-3 col-add">
+  <p class="offerprice"> $5.35</p>
+  <p class="price123">$4.20</p>
+  </div>
+  <div class="col-sm-3 col-add">
+  <button type="button" name="Addbutton" onclick="hello(2)" class="Add123" id="add3">+ Add</button>
+  </div>
+</div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 first">
+<img src="/img/piz1.jpg" alt="" class="a">
+<p class="editable">Americana</p>
+<div class="w3-panel w3-round-xxlarge w3-teal">
+<p>Large</p>
+</div>
+<div class="row">
+  <div class="col-sm-3 col-add">
+  <p class="offerprice"> $8.69</p>
+  <p class="price123">$7.23</p>
+  </div>
+  <div class="col-sm-3 col-add">
+  <button type="button"  name="Addbutton" onclick="hello(3)" class="Add123" id="add4">+ Add</button>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid allpizzacontainer1">
+<div class="row">
+  <div class="col-lg-3 col-md-6 first">
+  <img src="/img/piz1.jpg" alt="" class="a">
+    <p class="editable">Chicken Mushroom</p>
+    <div class="w3-panel w3-round-xxlarge w3-teal x">
+    <p>Medium</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-add">
+    <p class="offerprice"> $6.01</p>
+    <p class="price123">$4.98</p>
+    </div>
+    <div class="col-sm-3 col-add">
+    <button type="button" name="Addbutton" onclick="hello(4)" class="Add123" id="add5">+ Add</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 first">
+    <img src="/img/piz1.jpg" alt="" class="a">
+    <p class="editable">Panner Pizza</p>
+    <div class="w3-panel w3-round-xxlarge w3-teal">
+    <p>Small</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-add">
+    <p class="offerprice"> $5.29</p>
+    <p class="price123">$4.01</p>
+    </div>
+    <div class="col-sm-3 col-add">
+    <button type="button" name="Addbutton" onclick="hello(5)" class="Add123" id="add6">+ Add</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 first">
+<img src="/img/piz1.jpg" alt="" class="a">
+<p class="editable">Veggies Pizza</p>
+<div class="w3-panel w3-round-xxlarge w3-teal">
+<p>Large</p>
+</div>
+<div class="row">
+  <div class="col-sm-3 col-add">
+  <p class="offerprice"> $9.00</p>
+  <p class="price123">$7.23</p>
+  </div>
+  <div class="col-sm-3 col-add">
+  <button type="submit" onclick="hello(6)" class="Add123" id="add7">+ Add</button>
+  </div>
+</div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 first">
+<img src="/img/piz1.jpg" alt="" class="a">
+<p name="eight"  class="editable">Pepperoni</p>
+<div class="w3-panel w3-round-xxlarge w3-teal x">
+<p>Medium</p>
+</div>
+<div class="row">
+  <div class="col-sm-3 col-add">
+  <p class="offerprice"> $7.99</p>
+  <p class="price123">$6.47</p>
+  </div>
+  <div class="col-sm-3 col-add">
+  <button class="Add123" onclick="hello(7)">+ Add</button>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+</section>
+
+<script>
+
+function hello(number){
+var buttons=document.getElementsByClassName('Add123');
+var names=document.getElementsByClassName('editable');
+var i=document.getElementsByClassName('price123');
+let u=localStorage.getItem("id");
+if(buttons[number].innerHTML==='+ Add'){
+  var f=document.getElementById('cartCounter');
+  f.innerHTML++;
+  var pname=names[number].innerHTML;
+  var pprice=i[number].innerHTML;
+  console.log(pname,pprice);
+  $.ajax({
+        type: "GET",
+        data: {'uid': u},
+        url: `http://localhost:3000/offer1/${pname}/${pprice}`,
+      });
+}
+}
+</script>
+
+<%- include('partials/footer'); -%>

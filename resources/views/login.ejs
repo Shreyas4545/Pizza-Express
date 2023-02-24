@@ -1,0 +1,57 @@
+<%- include('header'); -%>
+<section id="loginpage">
+  <section id="title">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+  <a href="/"><img src="/img/logo.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/#allpizza">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/offers">Offers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/loginpage">My Orders</a>
+      </li>
+      <li class="nav-item">
+             <a href="/loginpage" class="nav-link active">login</a>
+      </li>
+      <li class="nav-item">
+      <button type="button" name="cartbutton" class="xyz flex items-center">
+        <span id="cartCounter" class="text-white font-bold">0</span>
+        <img src="/img/cart-black.png" alt="">
+      </button>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  </section>
+<div class="center">
+  <h1 class="LOGIN">Login</h1>
+  <form action="/login" method="post">
+    <div class="txt_field">
+      <input type="email" required name="username" autocomplete="off">
+      <span></span>
+      <label>Email id</label>
+    </div>
+    <div class="txt_field">
+      <input type="password" required name="password" autocomplete="off">
+      <span></span>
+      <label>Password</label>
+    </div>
+    <div class="pass">Forgot Password?</div>
+     <button type="submit" class="loginbutton" name="loginbutton">
+       Get me in
+     </button>
+    <div class="signup_link">
+      Not a member? <a href="/register">Signup</a>
+    </div>
+  </form>
+</div>
+</section>
+<%- include('partials/footer'); -%>

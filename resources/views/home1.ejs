@@ -1,0 +1,224 @@
+<%- include('header'); -%>
+<section id="title">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<a href="/"><img src="/img/logo.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#allpizza">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/offers">Offers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="/loginpage">My Orders</a>
+    </li>
+    <li class="nav-item">
+           <a href="/loginpage" class="nav-link active">login</a>
+    </li>
+    <li class="nav-item good">
+    <button type="button" name="cartbutton" class="xyz flex items-center">
+      <span id="cartCounter" class="text-white font-bold">0</span>
+      <img src="/img/cart-black.png" alt="">
+    </button>
+    </li>
+  </ul>
+</div>
+</nav>
+</section>
+<img src="/Marinara1.png" alt="">
+<section id="hungry">
+      <div class="row h-100">
+      <div class="col-6">
+  <p class="Hungry">Are you hungry ?</p>
+  <h1>Don't Wait !</h1>
+  <a href="#allpizza"><input type="Submit" name="" class="button1" value="Order">
+  </a>
+</div>
+<div class="col-6 d-flex justify-content-center align-items-center"> 
+<img src="/img/hero-pizza.png" alt="" class="mainimg">
+</div>
+</div>
+</section>
+<!-- all pizza section -->
+<section id="allpizza">
+  <h3 style="text-align: center; color: darkcyan">All Pizzas</h3>
+  <div class="container-fluid allpizzacontainer">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-1 s-card">
+        <div class="first">
+          <img src="/img/piz1.jpg" alt="" class="a" />
+          <p class="editable">Margherita</p>
+          <div class="w3-panel w3-round-xxlarge w3-teal">
+            <p>Small</p>
+          </div>
+          <div class="d-flex justify-content-center my-3">
+            <div class="">
+              <p class="price">$5.99</p>
+            </div>
+            <div class="">
+              <button
+                onclick="hello(0)"
+                class="Add"
+              >+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a"/>
+        <p class="editable">Marinara</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal">
+          <p>Medium</p>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <div class="">
+            <p class="price">$7.05</p>
+          </div>
+          <div class="">
+            <button
+              onclick="hello(1)"
+              class="Add"
+            >+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a" />
+        <p class="editable">Carbonara</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal">
+          <p>Small</p>
+        </div>
+        <div class="d-flex justify-content-center mx-6">
+          <div class="">
+            <p class="price">$5.35</p>
+          </div>
+          <div class="">
+            <button
+              onclick="hello(2)"
+              class="Add"
+              id="add3"
+            >+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a" />
+        <p class="editable">Americana</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal">
+          <p>Large</p>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <div class="">
+            <p class="price">$8.69</p>
+          </div>
+          <div class="">
+            <button
+              onclick="hello(3)"
+              class="Add"
+            >+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid allpizzacontainer1">
+    <div class="row">
+      <h1></h1>
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a" />
+        <p class="editable">Chicken Mushroom</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal x">
+          <p>Medium</p>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <div class="">
+            <p class="price">$6.01</p>
+          </div>
+          <div class="">
+            <button
+              onclick="hello(4)"
+              class="Add">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a" />
+        <p class="editable">Panner Pizza</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal">
+          <p>Small</p>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <div class="">
+            <p class="price">$5.29</p>
+          </div>
+          <div class="">
+            <button
+              onclick="hello(5)"
+              class="Add">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a" />
+        <p class="editable">Veggies Pizza</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal">
+          <p>Large</p>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <div class="">
+            <p class="price">$9.00</p>
+          </div>
+          <div class="">
+            <button  class="Add" onclick="hello(6)">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 first s-card">
+        <img src="/img/piz1.jpg" alt="" class="a" />
+        <p name="eight" class="editable">Pepperoni</p>
+        <div class="w3-panel w3-round-xxlarge w3-teal x">
+          <p>Medium</p>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <div class="">
+            <p class="price">$7.99</p>
+          </div>
+          <div class="">
+            <button class="Add" onclick="hello(7)">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  function hello(number){
+    var buttons = document.getElementsByClassName("Add");
+    var b=document.getElementsByClassName("editable");
+    let i=document.getElementsByClassName("price");
+      if(buttons[number].innerHTML === "+ Add"){
+        alert("Please Login First");
+      }
+      // else{
+      //         buttons[number].innerHTML="+ Add";
+      //         // console.log(buttons[number]);
+      //         const d=b[number].innerHTML;
+      //         // console.log(d);
+      //         $.ajax({
+      //           type: 'GET',
+      //           url: `http://localhost:3000/shreyas/${d}`
+      //       });
+      // }
+}
+ </script>
+<%- include('partials/footer'); -%>
